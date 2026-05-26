@@ -46,7 +46,7 @@ The empirical evaluation traces explicit platform activities across common admin
 | **Subtotal Accounting** | 4 | 0 | 0 | 5 | 5 |
 | **Calculated Mean Score** | **4.25** | **2.88** | **4.25** | **4.25** | **5.00** |
 
-> **Exclusion Note on Cloud-Native Variant Pipelines:** Highly optimized cloud architectures—specifically the **Cloud Mistral (API) Python Ingestion Pipeline** and enterprise cloud LLM nodes—are omitted from this baseline error evaluation matrix. Because these variants leverage unconstrained remote infrastructure, decoupled high-fidelity OCR endpoints (`mistral-ocr-latest`), and advanced context models (`mistral-large-latest`), they achieved a perfect 100% data extraction accuracy rate (Score: 5.00) across all fields and document test shapes exhibiting zero operational failure variations.
+> **Exclusion Note on Cloud-Native Variant Pipelines:** Highly optimized cloud architectures specifically the **Cloud Mistral (API) Python Ingestion Pipeline** and enterprise cloud LLM nodes are omitted from this baseline error evaluation matrix. Because these variants leverage unconstrained remote infrastructure, decoupled high-fidelity OCR endpoints (`mistral-ocr-latest`), and advanced context models (`mistral-large-latest`), they achieved a perfect 100% data extraction accuracy rate (Score: 5.00) across all fields and document test shapes exhibiting zero operational failure variations.
 
 ---
 
