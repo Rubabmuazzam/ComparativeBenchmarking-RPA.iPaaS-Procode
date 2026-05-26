@@ -34,17 +34,17 @@ The empirical evaluation traces explicit platform activities across common admin
 
 ### 2. Granular Baseline Field Accuracy Score Sheets (Scale: 1 to 5)
 
-| Field Parameter Target | Power Automate (Pre-trained) | UiPath (Pre-trained) | Make.com (Pre-trained) | Cloud Python (Mistral) | n8n Workflow (LLM Node) |
+| Field Parameter Target | Power Automate (Pre-trained) | UiPath (Pre-trained) | Make.com (Pre-trained) | Local Python (Mistral) | n8n Workflow (LLM Node) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Vendor Identity** | 5 | 5 | 5 | 5 | 5 |
 | **VAT Registration ID** | 5 | 2 | 5 | 5 | 5 |
 | **Currency Formats** | 5 | 5 | 5 | 5 | 5 |
-| **Invoice Identifier No.** | 3 | 3 | 5 | 5 | 5 |
-| **Invoice Issuance Date** | 3 | 3 | 5 | 5 | 5 |
+| **Invoice Identifier No.** | 3 | 3 | 5 | 4 | 5 |
+| **Invoice Issuance Date** | 3 | 3 | 5 | 3 | 5 |
 | **Total Liability Amount** | 5 | 5 | 5 | 5 | 5 |
 | **Service Period Tracking** | 4 | 0 | 4 | 5 | 5 |
 | **Subtotal Accounting** | 4 | 0 | 0 | 5 | 5 |
-| **Calculated Mean Score** | **4.25** | **2.88** | **4.25** | **5.00** | **5.00** |
+| **Calculated Mean Score** | **4.25** | **2.88** | **4.25** | **4.25** | **5.00** |
 
 > **Exclusion Note on Cloud-Native Variant Pipelines:** Highly optimized cloud architectures—specifically the **Cloud Mistral (API) Python Ingestion Pipeline** and enterprise cloud LLM nodes—are omitted from this baseline error evaluation matrix. Because these variants leverage unconstrained remote infrastructure, decoupled high-fidelity OCR endpoints (`mistral-ocr-latest`), and advanced context models (`mistral-large-latest`), they achieved a perfect 100% data extraction accuracy rate (Score: 5.00) across all fields and document test shapes exhibiting zero operational failure variations.
 
