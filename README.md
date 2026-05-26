@@ -34,7 +34,7 @@ The empirical evaluation traces explicit platform activities across common admin
 
 ### 2. Granular Baseline Field Accuracy Score Sheets (Scale: 1 to 5)
 
-| Field Parameter Target | Power Automate (Pre-trained) | UiPath (Pre-trained) | Make.com (Pre-trained) | Local Python (Mistral/Ollama) | n8n Workflow (LLM Node) |
+| Field Parameter Target | Power Automate (Pre-trained) | UiPath (Pre-trained) | Make.com (Pre-trained) | Cloud Python (Mistral) | n8n Workflow (LLM Node) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Vendor Identity** | 5 | 5 | 5 | 5 | 5 |
 | **VAT Registration ID** | 5 | 2 | 5 | 5 | 5 |
