@@ -47,12 +47,12 @@ This document contains the complete, unabridged reference data, metrics, step-by
 | **Vendor Identity** | 5 | 5 | 5 | 5 | 5 | **High Stability:** Consistently isolated legal seller entities across varying header shapes. |
 | **VAT Registration ID** | 5 | 2 | 5 | 5 | 5 | **UiPath Drop:** Failed to locate, map, or extract regional tax registration strings in 2 test files. |
 | **Currency Formats** | 5 | 5 | 5 | 5 | 5 | **High Stability:** Isolated 3-letter ISO and local character symbols (€, $, £) seamlessly. |
-| **Invoice Identifier No.** | 3 | 3 | 5 | 5 | 5 | **Collision Error (PA/UiPath):** Grabbed incorrect purchase order or tracking codes when multiple numbers appeared. |
-| **Invoice Issuance Date** | 3 | 3 | 5 | 5 | 5 | **Collision Error (PA/UiPath):** Grabbed alternative transaction/credit-note timestamps instead of invoice issuance dates. |
+| **Invoice Identifier No.** | 3 | 3 | 5 | 4 | 5 | **Collision Error (PA/UiPath):** Grabbed incorrect purchase order or tracking codes when multiple numbers appeared. |
+| **Invoice Issuance Date** | 3 | 3 | 5 | 3 | 5 | **Collision Error (PA/UiPath):** Grabbed alternative transaction/credit-note timestamps instead of invoice issuance dates. |
 | **Total Liability Amount** | 5 | 5 | 5 | 5 | 5 | **High Stability:** Successfully captured final transaction liabilities across layouts. |
 | **Service Period Tracking** | 4 | 0 | 4 | 5 | 5 | **Native Constraints:** Extracted cleanly via start/end fields in PA/Make; **completely omitted** in UiPath ML layer. |
 | **Subtotal Accounting** | 4 | 0 | 0 | 5 | 5 | **Model Boundaries:** Mapped with slight formatting shifts in PA; **wholly unextractable** in UiPath/Make baselines. |
-| **Calculated Mean Score** | **4.25** | **2.88** | **4.25** | **5.00** | **5.00** | *Evaluation Scale Criteria: 1 (Wholly Incorrect/Missing Data) to 5 (Perfect Extraction across all instances).* |
+| **Calculated Mean Score** | **4.25** | **2.88** | **4.25** | **4.25** | **5.00** | *Evaluation Scale Criteria: 1 (Wholly Incorrect/Missing Data) to 5 (Perfect Extraction across all instances).* |
 
 ### Methodological Note on Cloud-Native Pro-Code and Low-Code Pipelines
 > **Exclusion Note on Cloud-Native Variant Pipelines:** Highly optimized cloud architectures—specifically the **Cloud Mistral (API) Python Ingestion Pipeline** and enterprise cloud LLM nodes—are intentionally omitted from this baseline error evaluation matrix. Because these variants leverage unconstrained remote infrastructure, decoupled high-fidelity OCR endpoints (`mistral-ocr-latest`), and advanced context models (`mistral-large-latest`), they achieved a perfect 100% data extraction accuracy rate (Score: 5.00) across all fields and document test shapes. Because they exhibited zero variations, discrepancies, or layout-driven failure modes, their inclusion in an error analysis table would provide no statistical divergence. They are instead benchmarked in the multi-criteria infrastructure analysis (MCDA) metrics.
